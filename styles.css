@@ -97,8 +97,25 @@ body {
 .Home__hader {
   position: sticky;
   top: 0;
-  background-color: transparent;
   z-index: 3;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+
+  /* Animación controlada por scroll */
+  animation: NavbarOpaco both linear;
+  animation-timeline: scroll(root block);
+  animation-range: 0% 20%;
+}
+
+@keyframes NavbarOpaco {
+  from {
+    background: transparent;
+    backdrop-filter: blur(10px);
+  }
+  to {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(30px);
+  }
 }
 
 .Home__nav {
