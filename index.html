@@ -1,72 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  </head>
 
-<body>
-
+  <body>
     <main>
-        <header class="Home__hader">
-            <nav class="Home__nav">
-                <div class="Home__logo">Jose Vte</div>
-                <ul class="Home__menu">
-                    <li class="Home__menu-item"><a class="Home__menu-link" href="#inicio">Inicio</a></li>
-                    <li class="Home__menu-item"><a class="Home__menu-link" href="#sobre-mi">Sobre mi</a></li>
-                    <li class="Home__menu-item"><a class="Home__menu-link" href="#tecnologias">Tecnologias</a></li>
-                    <li class="Home__menu-item"><a class="Home__menu-link" href="#blog">Blog</a></li>
-                </ul>
-                <button class="Home__button-contact">
-                    Contacto
-                </button>
-            </nav>
-        </header>
+      <header class="Home__hader">
+        <nav class="Home__nav">
+          <div class="Home__logo">Jose Vte</div>
+          <ul class="Home__menu">
+            <li class="Home__menu-item">
+              <a class="Home__menu-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="Home__menu-item">
+              <a class="Home__menu-link" href="#sobre-mi">Sobre mi</a>
+            </li>
+            <li class="Home__menu-item">
+              <a class="Home__menu-link" href="#tecnologias">Tecnologias</a>
+            </li>
+            <li class="Home__menu-item">
+              <a class="Home__menu-link" href="#blog">Blog</a>
+            </li>
+          </ul>
+          <button class="Home__button-contact">Contacto</button>
+        </nav>
+      </header>
 
-        <section id="inicio" class="Home__inicio">
+      <section id="inicio" class="Home__inicio">
+        <div class="Home__container">
+          <div class="Home__presentation">
+            <span class="Home__claim">¡Hola!</span>
+            <p class="Home__claim-name">Soy Jose</p>
 
-            <div class="Home__container">
-                <span class="Home__claim">¡Hola!</span>
-
-                <div class="Home__profesion">
-                    <div class="linea"></div>
-                    <p class="Home__profesion-name">Desarrollador web</p>
-                </div>
-
-                <div class="Home__subtitle">
-                    <p>Designin user-friendly intrfaces and seamless user experiences.</p>
-                </div>
+            <div class="Home__profesion">
+              <div class="linea"></div>
+              <p class="Home__profesion-name">Desarrollador web</p>
             </div>
 
-
-        </section>
-
-        <section id="sobre-mi">
-            <div>
-                <h2>Sobre mi</h2>
+            <div class="Home__subtitle">
+              <p>
+                Designin user-friendly intrfaces and seamless user experiences.
+              </p>
             </div>
 
-        </section>
+            <div class="Home__buttons">
+                <button class="Home__button-contact">Hablemos</button>
+                <button class="Home__button-cv">Descargar CV</button>
+            </div>
+          </div>
 
-        <section id="tecnologias">
+          <div class="Home__image">
+            <img
+              src="./assets/perfil.webp"
+              alt="Jose"
+              width="408"
+              height="612"
+            />
+          </div>
 
-        </section>
+          <div class="Home__estadisticas">
+            <div class="Home__estadistica">
+              <span class="Home__estadistica-numero">+07</span>
+              <span class="Home__estadistica-descripcion"
+                >Años de experiencia</span
+              >
+            </div>
+            <div class="Home__estadistica">
+              <span class="Home__estadistica-numero">+56</span>
+              <span class="Home__estadistica-descripcion"
+                >Proyectos completados</span
+              >
+            </div>
 
-        <section id="blog">
+            <div class="Home__estadistica">
+              <span class="Home__estadistica-numero">+500</span>
+              <span class="Home__estadistica-descripcion">Bugs corregidos</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
+      <section id="sobre-mi">
+        <div class="Home__container">
+          <div>
+            <div class="Home__profesion">
+                <div class="linea"></div>
+                <p class="Home__profesion-name">Sobre mi</p>
+              </div>
+            <h2 class="Home__title">Quien soy</h2>
+          </div>
+        </div>
+      </section>
 
-        <footer></footer>
+      <section id="tecnologias"></section>
+
+      <section id="blog"></section>
+
+      <footer></footer>
     </main>
-
-</body>
-
+  </body>
 </html>

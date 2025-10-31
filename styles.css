@@ -1,122 +1,214 @@
 :root {
-    --color-primary: #020403;
-    --color-secondary: #053625;
+  --color-primary: #020403;
+  --color-secondary: #053625;
+  --color-tertiary: #747474;
 
-    --color-primary-forground: #ebebeb;
+  --color-primary-forground: #ebebeb;
 
-
-    --rounded-md: 8px;
-    --padding-md: 5px 5px;
+  --rounded-md: 8px;
+  --padding-md: 5px 5px;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Vend Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Vend Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    background-color: var(--color-primary);
+  background-color: var(--color-primary);
 }
 
 .Home__hader {
-    position: sticky;
-    top: 0;
-    background-color: transparent;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
 }
 
 .Home__nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-block: 10px;
-    padding-inline: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 10px;
+  padding-inline: 20px;
 }
 
 .Home__menu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
 }
 
 .Home__button-contact {
-    background-color: var(--color-primary-forground);
-    border-radius: var(--rounded-md);
-    border: 1px solid transparent;
-    padding: 5px 10px;
-    font-weight: 900;
-    transition: all 300ms ease;
-    cursor: pointer;
+  background-color: var(--color-primary-forground);
+  border-radius: var(--rounded-md);
+  border: 1px solid transparent;
+  padding: 5px 10px;
+  font-weight: 900;
+  transition: all 300ms ease;
+  cursor: pointer;
 }
 
 .Home__button-contact:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary-forground);
+  background-color: var(--color-secondary);
+  color: var(--color-primary-forground);
 }
 
 .Home__logo {
-    color: var(--color-primary-forground);
-    font-size: 1.25em;
+  color: var(--color-primary-forground);
+  font-size: 1.25em;
 }
 
 .Home__menu-link {
-    color: var(--color-primary-forground);
-    text-decoration: none;
-    font-size: .8em;
+  color: var(--color-primary-forground);
+  text-decoration: none;
+  font-size: 0.8em;
 }
 
 .Home__menu-link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
-
 .Home__inicio {
-    min-height: 60dvh;
-    padding-block: 4rem;
-    background-image: radial-gradient(circle, var(--color-secondary), var(--color-primary));
+  min-height: 60dvh;
+  padding-top: 4rem;
+  background-image: radial-gradient(
+    circle,
+    var(--color-secondary) 20%,
+    var(--color-primary) 50%
+  );
+  display: flex;
+  /* mask-image: linear-gradient(to bottom, black 60%, transparent 100%); */
 }
 
 .Home__container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding-inline: 2rem
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-inline: 2rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.Home__presentation {
+  max-width: 33%;
 }
 
 .Home__claim {
-    font-size: 5em;
-    color: var(--color-primary-forground);
+  font-size: 5em;
+  color: var(--color-primary-forground);
+}
+
+.Home__claim-name {
+  font-size: 5em;
+  color: var(--color-primary-forground);
+  font-weight: 900;
 }
 
 .Home__profesion {
-    display: flex;
-    align-items: center;
-    margin-block: 1.5rem;
+  display: flex;
+  align-items: center;
+  margin-block: 1.5rem;
 }
 
 .linea {
-    height: 2px;
-    background-color: var(--color-primary-forground);
-    width: 100%;
-    max-width: 80px;
+  height: 2px;
+  background-color: var(--color-tertiary);
+  width: 100%;
+  max-width: 80px;
 }
 
 .Home__profesion-name {
-    flex: 1;
-    color: var(--color-primary-forground);
-    margin-left: 8px;
+  flex: 1;
+  color: var(--color-primary-forground);
+  margin-left: 8px;
+  font-size: 1.25em;
 }
 
 .Home__subtitle {
-    text-wrap: balance;
-    width: 100%;
-    max-width: 50%;
-    line-clamp: 2;
-    color: var(--color-primary-forground);
-    margin-block: 1.25rem;
+  text-wrap: balance;
+  width: 100%;
+  max-width: 80%;
+  line-clamp: 2;
+  color: var(--color-primary-forground);
+  margin-block: 1.25rem;
+  font-size: 1.25em;
+}
+
+.Home__buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.Home__button-contact {
+  background-color: var(--color-primary-forground);
+  border-radius: var(--rounded-md);
+  border: 1px solid transparent;
+  padding: 12px 24px;
+  font-size: 1.15em;
+  font-weight: 900;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+
+.Home__button-cv {
+  background-color: transparent;
+  border: 1px solid var(--color-primary-forground);
+  color: var(--color-primary-forground);
+  border-radius: var(--rounded-md);
+  padding: 12px 24px;
+  font-size: 1.15em;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+.Home__button-cv:hover {
+  background-color: var(--color-primary-forground);
+  color: var(--color-primary);
+}
+
+.Home__estadisticas {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.Home__estadistica {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  padding-block: 2.5rem;
+  border-bottom: 1px solid var(--color-tertiary);
+}
+
+.Home__estadistica:first-child {
+  padding-top: 0;
+}
+
+.Home__estadistica:last-child {
+  border-bottom: none;
+}
+
+.Home__estadistica-numero {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--color-primary-forground);
+}
+.Home__estadistica-descripcion {
+  font-size: 1em;
+  color: var(--color-primary-forground);
+  font-weight: 400;
+  text-align: right;
+}
+
+.Home__title {
+  font-size: 3em;
+  color: var(--color-primary-forground);
+  font-weight: 400;
+  margin-block: 1.5rem;
+  text-transform: uppercase;
 }
