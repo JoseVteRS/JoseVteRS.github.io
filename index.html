@@ -55,8 +55,8 @@
             </div>
 
             <div class="Home__buttons">
-                <button class="Home__button-contact">Hablemos</button>
-                <button class="Home__button-cv">Descargar CV</button>
+              <button class="Home__button-contact">Hablemos</button>
+              <button class="Home__button-cv">Descargar CV</button>
             </div>
           </div>
 
@@ -89,25 +89,101 @@
             </div>
           </div>
         </div>
+        <div class="gradient"></div>
       </section>
 
-      <section id="sobre-mi">
-        <div class="Home__container">
+      <section id="sobre-mi" class="Tecnologias">
+        <div class="Tecnologias__container">
           <div>
-            <div class="Home__profesion">
-                <div class="linea"></div>
-                <p class="Home__profesion-name">Sobre mi</p>
-              </div>
-            <h2 class="Home__title">Quien soy</h2>
+            <div class="Section__label">
+              <div class="Section__divider"></div>
+              <p class="Section__label-text">Tecnologias</p>
+            </div>
+            <h2 class="Section__title">
+              Lenguajes de programación que utilizo
+            </h2>
+          </div>
+
+          <div class="Tecnologias__items">
+            <div class="Tecnologias__item-tecnologia">
+              <img src="./assets/html5.svg" alt="HTML" width="40" height="40" />
+              <p class="Home__tecnologia-nombre">HTML</p>
+            </div>
+
+            <div class="Tecnologias__item-tecnologia">
+              <img src="./assets/css.svg" alt="CSS" width="40" height="40" />
+              <p class="Home__tecnologia-nombre">CSS</p>
+            </div>
+
+            <div class="Tecnologias__item-tecnologia">
+              <img
+                src="./assets/javascript.svg"
+                alt="JavaScript"
+                width="40"
+                height="40"
+              />
+              <p class="Home__tecnologia-nombre">JavaScript</p>
+            </div>
+            <div class="Tecnologias__item-tecnologia">
+              <img
+                src="./assets/nextjs_logo_dark.svg"
+                alt="JavaScript"
+                height="20"
+              />
+              <p class="Home__tecnologia-nombre">JavaScript</p>
+            </div>
+            <div class="Tecnologias__item-tecnologia">
+              <img
+                src="./assets/tailwindcss-wordmark-dark.svg"
+                alt="JavaScript"
+                height="20"
+              />
+              <p class="Home__tecnologia-nombre">JavaScript</p>
+            </div>
+            <div class="Tecnologias__item-tecnologia">
+              <img src="./assets/typescript.svg" alt="JavaScript" height="40" />
+              <p class="Home__tecnologia-nombre">JavaScript</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="tecnologias"></section>
-
-      <section id="blog"></section>
-
-      <footer></footer>
+      <section id="tecnologias" class="Contacto">
+        <div class="Contacto__container">
+          <div>
+            <div class="Section__label">
+              <div class="Section__divider"></div>
+              <p class="Section__label-text">Contacto</p>
+            </div>
+            <h2 class="Section__title">
+                ¿Estás interesado en trabajar conmigo?
+            </h2>
+          </div>
+        </div>
+        <div class="Contacto__form">
+          <form class="Contacto__form-form">
+                <div class="Contacto__form-group">
+                    <div class="Contacto__form-fields">
+                        <label for="nombre">Nombre Completo</label>
+                        <input type="text" id="nombre" placeholder="Escribe tu nombre completo">
+                    </div>
+                    <div class="Contacto__form-fields">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="Contacto__form-group">
+                    <div class="Contacto__form-fields">
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" placeholder="Asunto">
+                    </div>
+                    <div class="Contacto__form-fields">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea  id="mensaje" rows="6"></textarea>
+                    </div>
+            </div>
+        </form>
+      </section>
     </main>
   </body>
 </html>
